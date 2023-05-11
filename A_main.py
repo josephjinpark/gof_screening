@@ -2125,7 +2125,8 @@ def temp_lookup ():
 
 def main():
 
-    p = mp.Pool(processes=4)
+    cores = 24
+    p     = mp.Pool(processes=cores)
 
     list_sParameters = [[sChrID, sStrand] for sChrID in list_sCHRIDs for sStrand in ['F','R']]
 
